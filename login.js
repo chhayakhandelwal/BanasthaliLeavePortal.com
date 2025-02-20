@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("forgotPassword").addEventListener("click", function (event) {
         event.preventDefault(); // Prevent default link behavior
         console.log("Forgot Password Clicked! Redirecting..."); // Debugging message
-        window.location.href = "http://127.0.0.1:5501/1stpage/otp/otp.html"; // Redirects to OTP page
+        window.location.href = 'otp.html'; // Redirects to OTP page
     });
 
     // ✅ Attach Event Listeners
