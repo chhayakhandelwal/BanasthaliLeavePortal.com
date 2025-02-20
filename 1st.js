@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     registerButtons.forEach(button => {
         button.addEventListener('click', function () {
             // Directly Register page pe redirect karna
-            window.location.href = 'register/register-webpage.html';
+            window.location.href = 'register.html';
         });
     });
 
