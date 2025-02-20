@@ -43,5 +43,9 @@ function togglePassword(inputId, iconId) {
         if (!isValid) {
             e.preventDefault();
         }
+        function BackToLogin() {
+    window.location.href = 'login.html';
+
+}
     });
 
