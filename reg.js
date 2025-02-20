@@ -43,14 +43,10 @@
         if (!isValid) {
             e.preventDefault();
         } else {
-            e.preventDefault(); // Prevent default form submission
-            redirectToLogin();  // Call the redirect function
+            alert("Registration successful! Redirecting to login..."); // Optional alert
+            setTimeout(() => {
+                window.location.href = "login.html"; // Auto-redirect after 1 sec
+            }, 1000);
         }
     });
-
-    function redirectToLogin() {
-        alert("Registration successful! Redirecting to login..."); // Optional alert
-        window.location.href = "login.html"; // Redirect to login page
-    
-    }
 </script>
