@@ -17,7 +17,7 @@ const loginButtons = document.querySelectorAll('.login');
         button.addEventListener('click', function () {
             const role = this.getAttribute('data-role');
             // Redirect to respective role's login page
-            window.location.href = `http://127.0.0.1:5501/1stpage/login/login.html`;
+            window.location.href = 'login.html';
         });
     });
 });
