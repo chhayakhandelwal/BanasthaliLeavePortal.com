@@ -51,9 +51,6 @@
     function redirectToLogin() {
         alert("Registration successful! Redirecting to login..."); // Optional alert
         window.location.href = "login.html"; // Redirect to login page
-    }
-
-    function BackToLogin() {
-        window.location.href = "login.html"; // Redirect to login page on "Back" button click
+    
     }
 </script>
