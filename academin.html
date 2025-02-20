@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Leave/Special Casual Leave Application</title>
+    <link rel="stylesheet" href="academic.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Academic Leave/Special Casual Leave Application</h2>
+
+        <form id="leaveForm">
+            <label for="name">Employee Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="designation">Designation:</label>
+            <input type="text" id="designation" name="designation" required>
+            
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+
+            <label for="fromDate">Start Date:</label>
+            <input type="date" id="fromDate" name="fromDate" required>
+
+            <label for="toDate">End Date:</label>
+            <input type="date" id="toDate" name="toDate" required>
+
+            <!-- Total Days Input Field (Read-Only) -->
+            <label for="totalDays">Total Days:</label>
+            <input type="text" id="totalDays" name="totalDays" readonly>
+
+            <label for="leaveReason">Reason for Leave:</label>
+            <textarea id="leaveReason" name="leaveReason" rows="3" required></textarea>
+
+            <label for="contactNumber">Emergency Contact Number:</label>
+            <input type="number" id="contactNumber" name="contactNumber" required>
+
+            <label for="address">Address During Leave:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <button type="submit">Submit Application</button>
+
+            <p id="successMessage" class="hidden"></p>
+        </form>
+    </div>
+
+    <script src="academic.js"></script>
+
+</body>
+</html>

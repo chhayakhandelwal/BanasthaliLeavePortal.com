@@ -1,0 +1,160 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    align-items: center;
+    padding-top: 120px;
+    overflow: hidden;  /* Prevent body scrolling */
+}
+
+/* Form Box */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 95%;              
+    max-width: 600px;
+    margin-top: 50px; /* Reduced gap between header and container */
+    text-align: left;  
+    border: 1px solid #ccc; 
+    box-sizing: border-box;
+    height: calc(100vh - 160px); /* Adjusted height to balance layout */
+    overflow-y: auto;  /* Scrollable content */
+    position: relative;
+}
+
+
+
+
+/* Header (Blue Bar) */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background: #004080;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.header img {
+    width: 85px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.header h1 {
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    font-size: 28px;
+    text-align: center;
+}
+
+
+
+
+
+h2 {
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;  /* 🔹 Smaller heading */
+}
+
+/* Input Fields */
+.form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+    font-size: 14px;  /* 🔹 Smaller label text */
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;  /* 🔹 Smaller input text */
+}
+
+.form-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;  /* 🔹 Smaller dropdown text */
+}
+
+/* Gender Options */
+.gender_options {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 14px;  /* 🔹 Smaller radio button text */
+}
+
+/* Password Field with Eye Icon */
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 45px; 
+    box-sizing: border-box;
+    font-size: 14px;  /* 🔹 Smaller password text */
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+    font-size: 16px;
+}
+
+.eye-icon:hover {
+    color: #000;
+}
+
+/* Register Button */
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #004080;
+    color: white;
+    font-size: 14px;  /* 🔹 Smaller button text */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #002d5a;
+}

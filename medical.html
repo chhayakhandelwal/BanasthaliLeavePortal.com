@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Leave Application</title>
+    <link rel="stylesheet" href="medical.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Medical Leave Application</h2>
+        <form id="leaveForm">
+            <label for="name">Employee Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="designation">Designation:</label>
+            <input type="text" id="designation" name="designation" required>
+            
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+
+        
+            <label for="leaveStart">Start Date:</label>
+            <input type="date" id="leaveStart" name="leaveStart" required>
+
+            <label for="leaveEnd">End Date:</label>
+            <input type="date" id="leaveEnd" name="leaveEnd" required>
+    
+            <!-- Total Days Input Field (Read-Only) -->
+            <label for="totalDays">Total Days:</label>
+            <input type="text" id="totalDays" name="totalDays" readonly>
+
+
+            <label for="reason">Reason for Leave:</label>
+            <textarea id="reason" name="reason" required></textarea>
+
+            <label for="address">Leave address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <label for="emergencyContact">Emergency Contact:</label>
+            <input type="tel" id="emergencyContact" name="emergencyContact" maxlength="10" required>
+
+            <label for="medicalDoc">Upload Medical Document(upto 2MB):</label>
+            <input type="file" id="medicalDoc" name="medicalDoc" accept=".pdf, .jpg, .png" required>
+
+            <p class="agreement">
+                I acknowledge that this leave is due to medical reasons. I have provided necessary documentation and will update my supervisor on my recovery progress.
+            </p>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+    <script src="medical.js"></script>
+</body>
+</html>

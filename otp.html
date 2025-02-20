@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="otp.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+
+    <!-- Header Section (Blue Patti) -->
+    <header class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Banasthali_Vidyapeeth_Logo.png" alt="Banasthali Vidyapith">
+        <h1>BANASTHALI VIDYAPITH</h1>
+    </header>
+
+    <!-- Main Container BELOW the Blue Patti -->
+    <div class="main-container">
+
+        <!-- Forgot Password Form -->
+        <div class="form-box">
+            <h2>Forgot Password</h2>
+
+            <!-- Email Input -->
+            <label for="email">Email ID</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <!-- Send OTP Button -->
+            <button onclick="sendOTP()">Send OTP</button>
+
+            <!-- OTP Input (Initially Hidden) -->
+            <div id="otpSection" class="hidden">
+                <label for="otp">Enter OTP</label>
+                <input type="text" id="otp" placeholder="Enter OTP" required>
+                <button onclick="verifyOTP()">Verify OTP</button>
+            </div>
+
+            <!-- Back to Login Button -->
+            <button class="back-btn" onclick="BackToLogin()">Back to Login</button>
+        </div>
+
+    </div>
+
+    <script src="otp.js"></script>
+</body>
+</html>

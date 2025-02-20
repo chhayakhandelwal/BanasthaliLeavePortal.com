@@ -1,0 +1,33 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+    <link rel="stylesheet" href="forgot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Banasthali_Vidyapeeth_Logo.png" alt="Banasthali Logo">
+        <h1>BANASTHALI VIDYAPITH</h1>
+    </header>
+    <main class="form-area">
+        <h2>Forgot Password</h2>
+        <div class="password-wrapper">
+            <input type="password" id="password" placeholder="Re-enter Password" minlength="8" required>
+            <i class="fas fa eye-icon" id="togglePassword"></i>
+        </div>
+        
+        <div class="password-wrapper">
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            <i class="fas fa eye-icon" id="toggleConfirmPassword"></i>
+        </div>
+        
+        <p class="error" id="errorText">Passwords do not match!</p>
+        <div class="remember">
+            <input type="checkbox" id="rememberMe">
+            <label for="rememberMe">Remember Me</label>
+        </div>
+        <button onclick="validatePassword()">Submit</button>
+    </main>
+    <script src="forgot.js"></script>
+</body>

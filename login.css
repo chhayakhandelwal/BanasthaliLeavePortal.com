@@ -1,0 +1,180 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Set a fixed background */
+body {
+    background: url('your-background-image.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensure the background covers the full screen */
+}
+
+/* Header Bar */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    text-align: center;
+    padding: 10px 0;
+    background: #004080;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.header h1 {
+    margin: 5px 0 0;
+    font-size: 20px;
+}
+
+/* Login Box */
+.login-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 130%;           /* Increased width */
+    max-width: 600px;      /* Maximum width */
+    margin-top: 150px;     /* Space below the header */
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    max-height: 80vh;      /* Set a max height for the box */
+    overflow-y: auto;      /* Enable scrolling if content overflows */
+}
+
+/* Scrollable container within login box */
+.login-box::-webkit-scrollbar {
+    width: 10px;
+}
+
+.login-box::-webkit-scrollbar-thumb {
+    background: #8b8686e5;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    color: #111111;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Password Field with Eye Icon */
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    font-size: 18px;
+}
+
+.toggle-password:hover {
+    color: #000;
+}
+
+/* Captcha Section */
+.captcha-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e3e3e3;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.change-captcha {
+    background: #004080;
+    color: white;
+    border: none;
+    padding: 3px 6px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#captchaText {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Login Button */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background: #004080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.login-button:hover {
+    background: #002d5a;
+}
+
+/* Forgot Password Link */
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+p a {
+    color: #004080;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .login-box {
+        width: 90%;
+    }
+}

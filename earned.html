@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earned Leave</title>
+    <link rel="stylesheet" href="earned.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Earned Leave</h2>
+        <form id="leaveForm">
+            <div class="form-group">
+                <label for="name">Employee Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="designation">Designation:</label>
+                <input type="text" id="designation" required>
+            </div>
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <input type="text" id="department" required>
+            </div>
+            <div class="form-group">
+                <label for="fromDate">From Date:</label>
+                <input type="date" id="fromDate" required>
+            </div>
+            <div class="form-group">
+                <label for="toDate">To Date:</label>
+                <input type="date" id="toDate" required>
+            </div>
+            <div class="form-group">
+                <label for="totalDays">Total Days:</label>
+                <input type="number" id="totalDays" readonly>
+            </div>
+            <div class="form-group">
+                <label for="reason">Reason for Leave:</label>
+                <textarea id="reason" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="address">Leave Address:</label>
+                <textarea id="address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="contact">Emergency Contact:</label>
+                <input type="tel" id="contact" pattern="[0-9]{10}" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit Application</button>
+            </div>
+        </form>
+    </div>
+    <script src="earned.js"></script>
+</body>
+</html>

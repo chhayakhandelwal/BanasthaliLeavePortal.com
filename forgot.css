@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    align-items: center;
+}
+
+/* Header (Blue Bar) */
+.header {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: #004080;
+    color: white;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 10px 0 0;
+}
+
+/* Form Box */
+.form-area {
+    background: white;
+    width: 95%;               
+    max-width: 400px;         
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 170px;   /* Increased margin to fully clear the header */
+    text-align: center;
+    border: 1px solid #ccc; /* Added border to make the box outline visible */
+}
+
+.form-area h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Input Fields */
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Password Wrapper */
+.password-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+    font-size: 18px;
+}
+
+.password-wrapper input {
+    width: 100%;
+    position: relative; /* Enough space so text doesn't overlap with the eye icon */
+}
+
+.eye-icon:hover {
+    color: #000;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 14px;
+    display: none;
+    text-align: center;
+}
+
+/* Remember Me Checkbox */
+.remember {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.remember input {
+    width: auto;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 15px;
+    background: #004080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+button:hover {
+    background: #003060;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    body {
+        padding: 10px;
+    }
+
+    .form-area {
+        padding: 20px;
+    }
+
+    input[type="password"] {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 14px;
+    }
+}

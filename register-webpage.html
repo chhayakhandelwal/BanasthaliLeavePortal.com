@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER - Banasthali Vidyapith</title>
+
+    <!-- Bootstrap CSS -->
+     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="register.css">
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="Banasthali Vidyapith Logo">
+            <h1>BANASTHALI VIDYAPITH</h1>
+        </div>
+
+        <form>
+            <h2>REGISTER</h2>
+            <div class="mb-3">
+                <label class="form-label">Userame</label>
+                <input type="text" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">First Name</label>
+                <input type="text" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Last Name</label>
+                <input type="text" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Department</label>
+                <select class="form-select" required>
+                    <option value="">Select Department</option>
+                    <option>Computer Science (CS)</option>
+                    <option>Artificial Intelligence (AI)</option>
+                    <option>Electronics & Communication (EC)</option>
+                    <option>Electrical Engineering (EE)</option>
+                    <option>VLSI</option>
+                    <option>Mechatronics</option>
+                    <option>Electronics & Instrumentation (EI)</option>
+                    <option>Information Technology (IT)</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Gender</label><br>
+                <div class="gender_options">
+                    <input type="radio" name="gender" value="Male" required> Male
+                    <input type="radio" name="gender" value="Female" required> Female
+                    <input type="radio" name="gender" value="Other" required> Other
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Qualification</label>
+                <input type="text" class="form-control" required>
+            </div>
+
+            <!-- Password Field with Image-based Toggle -->
+         
+            <!-- Password Field -->
+<div class="mb-3 password-container">
+    <label class="form-label" for="password">Password</label>
+    <div class="password-wrapper">
+        <input type="password" id="password" class="form-control" placeholder="Enter Password" required>
+        <i class="fas fa-eye-slash eye-icon" id="togglePassword" onclick="togglePassword('password', 'togglePassword')"></i>
+    </div>
+    <small class="text-danger" id="passwordError"></small>
+</div>
+
+
+            <!-- Confirm Password Field with FontAwesome Icon -->
+            <div class="mb-3 password-container">
+                <label class="form-label" for="confirmPassword">Confirm Password</label>
+                <div class="password-wrapper">
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Enter Confirm Password" required>
+                    
+                    <i class="fas fa-eye-slash eye-icon" id="toggleConfirmPassword" onclick="togglePassword('confirmPassword', 'toggleConfirmPassword')"></i>
+                                    </div>
+                                    <small class="text-danger" id="confirmPasswordError"></small>
+            </div>
+            
+
+            <button type="submit" class="btn btn-primary w-100">Register</button>
+        </form>
+    </div>
+
+    <script src="reg.js"></script>
+</body>
+</html>

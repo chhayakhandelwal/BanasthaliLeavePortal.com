@@ -1,0 +1,118 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Center the entire page */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+/* Header (Blue Patti) */
+.header {
+    width: 100%;
+    text-align: center;
+    background: #004080;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header img {
+    width: 80px;
+    margin-bottom: 5px;
+}
+
+.header h1 {
+    font-size: 18px;
+}
+
+/* Main Container (Below the Blue Patti) */
+.main-container {
+    margin-top: 180px; /* Push below the header */
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Form Box */
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Input Fields */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #004080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #002f5d;
+}
+
+/* Hidden OTP Section */
+.hidden {
+    display: none;
+}
+
+/* Back to Login Button */
+.back-btn {
+    background: #888;
+}
+
+.back-btn:hover {
+    background: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .main-container {
+        width: 90%;
+    }
+}

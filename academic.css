@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+   
+        background: white;
+        width: 50%; /* Same as previous */
+        max-height: 90vh; /* Same height */
+        overflow-y: auto; /* Scroll if needed */
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    
+    margin: auto;
+   
+    
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #004080;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #004080;
+}
+
+.hidden {
+    display: none;
+}

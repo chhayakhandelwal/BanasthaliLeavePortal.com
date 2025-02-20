@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Leave Portal</title>
+    <link rel="stylesheet" href="faculty.css">
+    <script defer src="faculty.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar (Fixed Blue Section) -->
+    <div class="sidebar">
+        <img src="https://via.placeholder.com/150" alt="Profile Picture">
+        <h2>John Doe</h2>
+        <p>Faculty Member</p>
+        <ul>
+            <li onclick="openLeaveRequest()" class="active"><i class="fas fa-plane-departure"></i> Leave Request</li>
+            <li onclick="handleClick('Leave Balance')"><i class="fas fa-wallet"></i> Leave Balance</li>
+            <li onclick="handleClick('History')"><i class="fas fa-history"></i> History</li>
+            <li onclick="handleClick('Calendar')"><i class="fas fa-calendar-alt"></i> Calendar</li>
+            <li onclick="handleClick('Raise an Issue')"><i class="fas fa-exclamation-circle"></i> Raise an Issue</li>
+        </ul>
+    </div>
+
+    <!-- Main Content (White Section) -->
+    <div class="content">
+        <div class="h1">
+            <h1>Welcome to Faculty Leave Portal</h1>
+        </div>
+
+        <!-- Leave Request Section -->
+        <div id="leaveRequest">
+            <h2>Apply for Leave</h2>
+            <div class="leave-buttons">
+                <button onclick="applyLeave('Casual Leave')">
+                    <i class="fas fa-sun leave-icon"></i>
+                    <span>Casual Leave</span>
+                </button>
+                <button onclick="applyLeave('Earned Leave')">
+                    <i class="fas fa-money-check-alt leave-icon"></i>
+                    <span>Earned Leave</span>
+                </button>
+                <button onclick="applyLeave('Medical Leave')">
+                    <i class="fas fa-briefcase-medical leave-icon"></i>
+                    <span>Medical Leave</span>
+                </button>
+                <button onclick="applyLeave('Half Pay Leave')">
+                    <i class="fas fa-money-bill leave-icon"></i>
+                    <span>Half Pay Leave</span>
+                </button>
+                <button onclick="applyLeave('Special Casual Leave / Academic Leave')">
+                    <i class="fas fa-graduation-cap leave-icon"></i>
+                    <span>Special Casual Leave / Academic Leave</span>
+                </button>
+                <button onclick="applyLeave('Leave Without Pay')">
+                    <i class="fas fa-ban leave-icon"></i>
+                    <span>Leave Without Pay</span>
+                </button>
+                <button onclick="applyLeave('Maternity/Paternity Leave')">
+                    <i class="fas fa-baby leave-icon"></i>
+                    <span>Maternity / Paternity Leave</span>
+                </button>
+                <button onclick="applyLeave('Duty Leave')">
+                    <i class="fas fa-user-tie leave-icon"></i>
+                    <span>Duty Leave</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- ✅ Iframe to load Casual Leave Page ✅ -->
+        <iframe id="leaveFrame" class="hidden"></iframe>
+
+        <!-- Disclaimer (Fixed Position) -->
+        <div id="disclaimer">
+            <strong style="color: red;">DISCLAIMER:</strong>  
+            <br><strong>Unnecessary leave requests are strictly prohibited.</strong>  
+            <br>All leave applications must comply with official leave policies and regulations.  
+        </div>
+    </div>
+</body>
+</html>
