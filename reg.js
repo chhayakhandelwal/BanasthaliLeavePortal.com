@@ -43,8 +43,15 @@ function togglePassword(inputId, iconId) {
         if (!isValid) {
             e.preventDefault();
         }
-        function BackToLogin() {
-    window.location.href = 'login.html';
+        function redirectToLogin(event) {
+        event.preventDefault(); // Form submit hone se rokta hai
+        alert("Registration successful! Redirecting to login..."); // Optional alert
+        window.location.href = "login.html"; // Login page pe redirect karega
+    }
+
+    function BackToLogin() {
+        window.location.href = "login.html"; // Back button click hone par bhi login page pe le jayega
+    }
 
 }
     });
