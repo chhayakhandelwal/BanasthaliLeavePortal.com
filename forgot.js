@@ -32,6 +32,6 @@ function validatePassword() {
         errorText.style.display = "block";
     } else {
         errorText.style.display = "none";
-        window.location.href = "http://127.0.0.1:5501/1stpage/login/login.html";
+        window.location.href = 'login.html';
     }
 }
