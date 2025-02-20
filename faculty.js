@@ -34,7 +34,7 @@ function applyLeave(leaveType) {
     let disclaimer = document.getElementById("disclaimer");
 
     if (leaveType === "Casual Leave") {
-        leaveFrame.src = "http://127.0.0.1:5501/faculty/casual%20leave/casual.html";
+        leaveFrame.src = 'casual.html';
         leaveFrame.classList.remove("hidden");
 
         // Hide elements when Casual Leave is opened
@@ -43,7 +43,7 @@ function applyLeave(leaveType) {
         disclaimer.classList.add("hidden");
     } 
     else if(leaveType === "Earned Leave") {
-        leaveFrame.src = "http://127.0.0.1:5501/faculty/earned%20leave/earned.html";
+        leaveFrame.src = 'earned.html';
         leaveFrame.classList.remove("hidden");
 
         // Hide elements when Casual Leave is opened
@@ -51,7 +51,7 @@ function applyLeave(leaveType) {
         welcomeText.classList.add("hidden");
         disclaimer.classList.add("hidden");
     }else if(leaveType === "Special Casual Leave / Academic Leave") {
-        leaveFrame.src = "http://127.0.0.1:5501/faculty/academic%20leave/academin.html";
+        leaveFrame.src = 'academin.html';
         leaveFrame.classList.remove("hidden");
 
         // Hide elements when Casual Leave is opened
@@ -60,7 +60,7 @@ function applyLeave(leaveType) {
         disclaimer.classList.add("hidden");
     } 
     else if(leaveType === "Medical Leave") {
-        leaveFrame.src = "http://127.0.0.1:5501/faculty/medical%20leave/medical.html";
+        leaveFrame.src = 'medical.html';
         leaveFrame.classList.remove("hidden");
 
         // Hide elements when Casual Leave is opened
@@ -69,7 +69,7 @@ function applyLeave(leaveType) {
         disclaimer.classList.add("hidden");
     } 
     else if(leaveType === "Half Pay Leave") {
-        leaveFrame.src = "http://127.0.0.1:5501/faculty/halfpay/halfpay.html";
+        leaveFrame.src = 'halfpay.html';
         leaveFrame.classList.remove("hidden");
 
         // Hide elements when Casual Leave is opened
@@ -78,7 +78,7 @@ function applyLeave(leaveType) {
         disclaimer.classList.add("hidden");
     } 
     else if(leaveType === "Leave Without Pay") {
-        leaveFrame.src = "http://127.0.0.1:5501/faculty/leave%20withoutpay/l.html";
+        leaveFrame.src = 'l.html';
         leaveFrame.classList.remove("hidden");
 
         // Hide elements when Casual Leave is opened
@@ -87,7 +87,7 @@ function applyLeave(leaveType) {
         disclaimer.classList.add("hidden");
     } 
     else if(leaveType === "Maternity/Paternity Leave") {
-        leaveFrame.src = "http://127.0.0.1:5501/faculty/maternity/paternity/m.html";
+        leaveFrame.src = 'm.html';
         leaveFrame.classList.remove("hidden");
 
         // Hide elements when Casual Leave is opened
@@ -96,7 +96,7 @@ function applyLeave(leaveType) {
         disclaimer.classList.add("hidden");
     } 
     else if(leaveType === "Duty Leave") {
-        leaveFrame.src = "http://127.0.0.1:5501/faculty/duty%20leave/duty.html";
+        leaveFrame.src = 'duty.html';
         leaveFrame.classList.remove("hidden");
 
         // Hide elements when Casual Leave is opened
