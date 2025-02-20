@@ -1,19 +1,19 @@
-function togglePassword(inputId, iconId) {
-    const passwordInput = document.getElementById(inputId);
-    const toggleIcon = document.getElementById(iconId);
+<script>
+    function togglePassword(inputId, iconId) {
+        const passwordInput = document.getElementById(inputId);
+        const toggleIcon = document.getElementById(iconId);
 
-    // Check the current type and toggle it
-    if (passwordInput.type === "password") {
-        passwordInput.type = "text";
-        toggleIcon.classList.remove("fa-eye-slash");
-        toggleIcon.classList.add("fa-eye");
-        
-    } else {
-        passwordInput.type = "password";
-       toggleIcon.classList.remove("fa-eye");
-        toggleIcon.classList.add("fa-eye-slash");
+        // Check the current type and toggle it
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            toggleIcon.classList.remove("fa-eye-slash");
+            toggleIcon.classList.add("fa-eye");
+        } else {
+            passwordInput.type = "password";
+            toggleIcon.classList.remove("fa-eye");
+            toggleIcon.classList.add("fa-eye-slash");
+        }
     }
-}
 
     document.querySelector('form').addEventListener('submit', function(e) {
         const password = document.getElementById('password').value;
@@ -42,17 +42,18 @@ function togglePassword(inputId, iconId) {
         // If not valid, prevent form submission
         if (!isValid) {
             e.preventDefault();
+        } else {
+            e.preventDefault(); // Prevent default form submission
+            redirectToLogin();  // Call the redirect function
         }
-        function redirectToLogin(event) {
-        event.preventDefault(); // Form submit hone se rokta hai
+    });
+
+    function redirectToLogin() {
         alert("Registration successful! Redirecting to login..."); // Optional alert
-        window.location.href = "login.html"; // Login page pe redirect karega
+        window.location.href = "login.html"; // Redirect to login page
     }
 
     function BackToLogin() {
-        window.location.href = "login.html"; // Back button click hone par bhi login page pe le jayega
+        window.location.href = "login.html"; // Redirect to login page on "Back" button click
     }
-
-}
-    });
-
+</script>
