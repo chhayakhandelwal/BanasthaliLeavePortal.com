@@ -21,12 +21,12 @@ function verifyOTP() {
 
     if (enteredOTP === storedOTP) {
         alert("OTP verified successfully!");
-        window.location.href = "http://127.0.0.1:5501/forgotpassword/forgot.html";
+        window.location.href = 'forgot.html';
     } else {
         alert("Invalid OTP. Please try again.");
     }
 }
 function BackToLogin() {
-    window.location.href = 'http://127.0.0.1:5501/1stpage/login/login.html';
+    window.location.href = 'login.html';
 
 }
