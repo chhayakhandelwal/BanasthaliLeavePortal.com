@@ -48,7 +48,7 @@ function togglePassword(inputId, iconId) {
         successMessage.textContent = "Registration Successful! Redirecting...";
         successMessage.style.color = "green";
         setTimeout(() => {
-            window.location.href = "http://127.0.0.1:5501/1stpage/1st.html"; // Login page pe redirect karega
+            window.location.href = "index.html"; // Login page pe redirect karega
         }, 4000);
     
     });
