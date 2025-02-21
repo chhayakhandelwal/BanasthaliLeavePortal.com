@@ -1,19 +1,19 @@
-<script>
-    function togglePassword(inputId, iconId) {
-        const passwordInput = document.getElementById(inputId);
-        const toggleIcon = document.getElementById(iconId);
+function togglePassword(inputId, iconId) {
+    const passwordInput = document.getElementById(inputId);
+    const toggleIcon = document.getElementById(iconId);
 
-        // Check the current type and toggle it
-        if (passwordInput.type === "password") {
-            passwordInput.type = "text";
-            toggleIcon.classList.remove("fa-eye-slash");
-            toggleIcon.classList.add("fa-eye");
-        } else {
-            passwordInput.type = "password";
-            toggleIcon.classList.remove("fa-eye");
-            toggleIcon.classList.add("fa-eye-slash");
-        }
+    // Check the current type and toggle it
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        toggleIcon.classList.remove("fa-eye-slash");
+        toggleIcon.classList.add("fa-eye");
+        
+    } else {
+        passwordInput.type = "password";
+       toggleIcon.classList.remove("fa-eye");
+        toggleIcon.classList.add("fa-eye-slash");
     }
+}
 
     document.querySelector('form').addEventListener('submit', function(e) {
         const password = document.getElementById('password').value;
@@ -38,15 +38,17 @@
             confirmPasswordError.textContent = 'Passwords do not match.';
             isValid = false;
         }
-
+       
         // If not valid, prevent form submission
         if (!isValid) {
             e.preventDefault();
-        } else {
-            alert("Registration successful! Redirecting to login..."); // Optional alert
-            setTimeout(() => {
-                window.location.href = "login.html"; // Auto-redirect after 1 sec
-            }, 1000);
+            return;
         }
+        e.preventDefault();
+        successMessage.textContent = "Registration Successful! Redirecting...";
+        successMessage.style.color = "green";
+        setTimeout(() => {
+            window.location.href = "http://127.0.0.1:5501/1stpage/1st.html"; // Login page pe redirect karega
+        }, 4000);
+    
     });
-</script>
